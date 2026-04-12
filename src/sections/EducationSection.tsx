@@ -75,6 +75,14 @@ const EducationSection = () => (
                   transition={{ duration: 3, repeat: Infinity }}
                />
             </div>
+            
+            {/* Mobile Timeline Node */}
+            <div className="md:hidden flex items-center gap-4 w-full mb-4">
+               <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                  <item.icon size={18} className="text-primary" />
+               </div>
+               <div className="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent" />
+            </div>
 
             {/* Main Card */}
             <div className="w-full md:w-[46%] perspective-1000">

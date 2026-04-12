@@ -42,7 +42,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[100vh] min-h-[700px] flex items-center overflow-hidden bg-background">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-background pt-24 pb-12 lg:pt-0 lg:pb-0">
       {/* ── Geometric Background ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Futuristic Grid */}
@@ -168,11 +168,11 @@ const HeroSection = () => {
           >
             <div className="relative group w-full max-w-[350px]">
               {/* Spinning Scaffolding */}
-              <div className="absolute inset-[-40px] border border-primary/20 rounded-full animate-spin-slow" />
-              <div className="absolute inset-[-90px] border border-white/5 rounded-full animate-reverse-spin-slow" />
+              <div className="absolute inset-[-20px] md:inset-[-40px] border border-primary/20 rounded-full animate-spin-slow" />
+              <div className="absolute inset-[-50px] md:inset-[-90px] border border-white/5 rounded-full animate-reverse-spin-slow" />
               
               {/* Circular Professional Hub */}
-              <div className="relative z-20 w-[240px] h-[240px] md:w-[320px] md:h-[320px] rounded-full p-1.5 bg-gradient-to-tr from-primary via-accent to-primary shadow-[0_0_50px_rgba(var(--primary-rgb),0.2)] mx-auto animate-float">
+              <div className="relative z-20 w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] md:w-[320px] md:h-[320px] rounded-full p-1.5 bg-gradient-to-tr from-primary via-accent to-primary shadow-[0_0_50px_rgba(var(--primary-rgb),0.2)] mx-auto animate-float">
                 <div className="absolute inset-0.5 bg-background rounded-full m-1" />
                 <img 
                   src={profileImg} 
@@ -204,15 +204,15 @@ const HeroSection = () => {
                      }}
                      className="absolute left-1/2 -translate-x-1/2 pointer-events-auto"
                      style={{ 
-                        top: tech.ring === 1 ? '-40px' : '-110px',
+                        top: tech.ring === 1 ? '-20px' : '-55px', // Adjusted for mobile
                      }}
                    >
                       <motion.div 
                         whileHover={{ scale: 1.25 }}
-                        className="w-16 h-16 md:w-20 md:h-20 glass shadow-2xl flex flex-col items-center justify-center rounded-3xl border border-white/10 group/item cursor-pointer hover:border-primary/40 transition-all"
+                        className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 glass shadow-2xl flex flex-col items-center justify-center rounded-2xl sm:rounded-3xl border border-white/10 group/item cursor-pointer hover:border-primary/40 transition-all"
                       >
-                         <span className="text-2xl md:text-3xl mb-1">{tech.icon}</span>
-                         <span className="text-[7px] md:text-[8px] font-black uppercase tracking-[0.2em] text-muted-foreground group-hover/item:text-primary transition-colors">{tech.name}</span>
+                         <span className="text-sm sm:text-2xl md:text-3xl mb-1">{tech.icon}</span>
+                         <span className="text-[5px] sm:text-[7px] md:text-[8px] font-black uppercase tracking-[0.2em] text-muted-foreground group-hover/item:text-primary transition-colors">{tech.name}</span>
                       </motion.div>
                    </motion.div>
                 </motion.div>

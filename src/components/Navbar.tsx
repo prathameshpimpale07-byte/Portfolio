@@ -49,7 +49,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-center px-6 py-4 relative">
         {/* Logo - absolute left */}
-        <button onClick={() => handleClick("#home")} className="absolute left-6 font-display text-2xl font-bold gradient-text tracking-tight">
+        <button onClick={() => handleClick("#home")} className="absolute left-6 font-display text-xl sm:text-2xl font-bold gradient-text tracking-tight">
           {"<PP />"}
         </button>
 

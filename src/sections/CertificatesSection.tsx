@@ -126,7 +126,7 @@ export default function CertificatesSection() {
                 key={`${c.id}-${i}`}
                 whileHover={{ y: -12, scale: 1.05 }}
                 onClick={() => setSelected(i % certificates.length)}
-                className="group glass-card rounded-3xl overflow-hidden cursor-pointer flex flex-col w-[350px] flex-shrink-0"
+                className="group glass-card rounded-3xl overflow-hidden cursor-pointer flex flex-col w-[280px] sm:w-[350px] flex-shrink-0"
                 style={{ border: `1px solid ${c.accent}22` }}
               >
                 {/* ── Certificate image / preview ── */}
