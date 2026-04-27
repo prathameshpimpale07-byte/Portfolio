@@ -127,8 +127,9 @@ const HeroSection = () => {
               </motion.button>
 
               <motion.a 
-                href="/resume.pdf" 
+                href="https://drive.google.com/file/d/18NaqBpv-7MIUjSQWpEdAtCPStaFCbKcX/view?usp=sharing" 
                 target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 className="px-8 py-4 bg-white/5 border border-white/10 text-foreground/50 font-black text-xs rounded-xl hover:text-foreground transition-all uppercase tracking-[0.2em] flex items-center gap-2"
               >
